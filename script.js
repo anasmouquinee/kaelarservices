@@ -10,16 +10,15 @@ const chatbotResponses = {
     ],
     services: [
         "Nous offrons:\n✓ Création de sites web\n✓ Adresses email professionnelles\n✓ Design responsive\n✓ SEO et référencement\n✓ Google Analytics\n✓ Maintenance continue",
-        "Tous nos services incluent support et maintenance! 💪"
     ],
     contact: [
         "Vous pouvez nous contacter via:\n📞 +212 6 60 48 79 69\n📧 kaelarservices@gmail.com\nOu utilisez le formulaire de contact ci-dessous!",
-        "N'hésitez pas à nous envoyer vos demandes spéciales!"
     ],
     default: [
         "Je ne suis pas sûr de bien comprendre. Pouvez-vous reformuler?",
         "Pardonnez-moi, pouvez-vous être plus précis?",
-        "Intéressant! Avez-vous d'autres questions?"
+        "Intéressant! Avez-vous d'autres questions?",
+        "Pour les tarifes tapez prix, pour les services tapez service, pour nous contacter tapez contact."
     ]
 };
 
@@ -185,12 +184,12 @@ function observeElements() {
 
 function getAnimationForElement(element) {
     if (element.classList.contains('service-card')) {
-        return 'scaleIn 0.6s ease forwards';
+        return 'scaleIn 1.1s ease forwards';
     }
     if (element.classList.contains('pricing-card')) {
-        return 'slideInUp 0.6s ease forwards';
+        return 'slideInUp 1.1s ease forwards';
     }
-    return 'fadeIn 0.6s ease forwards';
+    return 'fadeIn 1.1s ease forwards';
 }
 
 // Mouse Follow Effect on Hero
@@ -285,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const chatMessages = document.getElementById("chatMessages");
     const welcomeMessage = document.createElement("div");
     welcomeMessage.className = "message bot";
-    welcomeMessage.textContent = "Bienvenue chez Kaelar Services! 👋 Je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui?";
+    welcomeMessage.textContent = "Bienvenue chez Kaelar Services! 👋 Je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui? Pour plus de details n'hesiter pas a taper 'contact'";
     chatMessages.appendChild(welcomeMessage);
 
     // Add animations
