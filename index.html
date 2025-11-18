@@ -3,183 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaelar Services - Création de Sites Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Kaelar Services | Agence Web Digitale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Kaelar Services</div>
+    <div class="background-wrapper">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <div class="logo">Kaelar<span>.</span></div>
             <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
-                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="#pricing"><i class="fas fa-tags"></i> Tarifs</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Tarifs</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Bienvenue chez Kaelar Services</h1>
-            <p>Créez votre présence en ligne avec nos solutions web professionnelles</p>
-            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
-                Commencer Maintenant
-            </button>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">🚀 Propulsez votre business</span>
+                <h1>L'Excellence Web <br><span class="text-gradient">Sur Mesure.</span></h1>
+                <p>Nous transformons vos idées en expériences digitales inoubliables. Sites web performants, design moderne et stratégies SEO qui convertissent.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})">
+                        Voir les Offres <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        Parler à un expert
+                    </button>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="50">0</span>+
+                        <span class="stat-label">Projets Livrés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="100">0</span>%
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card-visual">
+                    <i class="fas fa-code"></i>
+                    <div class="code-lines">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="floating-icon i1"><i class="fab fa-google"></i></div>
+                <div class="floating-icon i2"><i class="fas fa-chart-line"></i></div>
+                <div class="floating-icon i3"><i class="fas fa-mobile-alt"></i></div>
+            </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="section services">
         <div class="container">
-            <h2>Nos Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Création de Site Web</h3>
-                    <p>Sites modernes et performants adaptés à votre activité</p>
+            <div class="section-header">
+                <h2>Nos Expertises</h2>
+                <p>Tout ce dont vous avez besoin pour réussir en ligne</p>
+            </div>
+            <div class="grid-3">
+                <div class="card glass service-card">
+                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Dév. Web</h3>
+                    <p>Sites vitrines et e-commerce ultra-rapides, sécurisés et conçus pour convertir vos visiteurs en clients.</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-mail-bulk"></i>
-                    <h3>Adresses Email Professionnelles</h3>
-                    <p>Emails personnalisés avec votre nom de domaine</p>
+                <div class="card glass service-card">
+                    <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Des interfaces modernes et intuitives qui reflètent l'identité de votre marque et captivent l'attention.</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Design Responsive</h3>
-                    <p>Optimisé pour tous les appareils et écrans</p>
+                <div class="card glass service-card">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <h3>SEO & Audit</h3>
+                    <p>Optimisation technique et sémantique pour placer votre site en tête des résultats Google.</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-search"></i>
-                    <h3>SEO & Référencement</h3>
-                    <p>Améliorez votre visibilité sur les moteurs de recherche</p>
+                <div class="card glass service-card">
+                    <div class="icon-box"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3>Emailing Pro</h3>
+                    <p>Configuration d'adresses professionnelles et stratégies de newsletter pour fidéliser.</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-bar-chart"></i>
-                    <h3>Google Analytics</h3>
-                    <p>Suivez les performances de votre site</p>
+                <div class="card glass service-card">
+                    <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Analytics</h3>
+                    <p>Installation de tableaux de bord pour suivre vos performances en temps réel.</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Maintenance Continue</h3>
-                    <p>Support et mise à jour permanents</p>
+                <div class="card glass service-card">
+                    <div class="icon-box"><i class="fas fa-tools"></i></div>
+                    <h3>Maintenance</h3>
+                    <p>Dormez tranquille. On s'occupe des mises à jour, de la sécurité et des sauvegardes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <section id="pricing" class="section pricing">
         <div class="container">
-            <h2>Nos Tarifs</h2>
-            <div class="pricing-grid">
-                <!-- Starter Plan -->
-                <div class="pricing-card">
-                    <h3>STARTER</h3>
-                    <div class="price">1500 dh<span>/HT</span></div>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> 5 pages + page de contact</li>
-                        <li><i class="fas fa-check"></i> Hébergement et nom de domaine offert (première année)</li>
-                        <li><i class="fas fa-check"></i> 5 Adresses de messagerie</li>
-                        <li><i class="fas fa-check"></i> Mobile friendly</li>
-                        <li><i class="fas fa-check"></i> Google Webmaster</li>
-                        <li><i class="fas fa-check"></i> Google Analytics</li>
+            <div class="section-header">
+                <h2>Investissez intelligemment</h2>
+                <p>Des forfaits transparents, sans frais cachés</p>
+            </div>
+            <div class="pricing-wrapper">
+                <div class="card glass pricing-card">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="price">1500 <span class="currency">DH</span><span class="tax">/HT</span></div>
+                        <p>Idéal pour débuter</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 5 Pages</li>
+                        <li><i class="fas fa-check-circle"></i> Hébergement Offert (1 an)</li>
+                        <li><i class="fas fa-check-circle"></i> 5 Emails Pro</li>
+                        <li><i class="fas fa-check-circle"></i> Design Responsive</li>
                     </ul>
-                    <button class="price-btn" onclick="openContactForm('Starter')">Contactez-nous</button>
+                    <button class="btn btn-outline full-width" onclick="openContactForm('Starter')">Choisir Starter</button>
                 </div>
 
-                <!-- Standard Plan -->
-                <div class="pricing-card featured">
-                    <h3>Standàrd</h3>
-                    <div class="price">2200 dh<span>/HT</span></div>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> 10 pages + page de contact</li>
-                        <li><i class="fas fa-check"></i> Hébergement et nom de domaine offert (première année)</li>
-                        <li><i class="fas fa-check"></i> 5 Adresses de messagerie</li>
-                        <li><i class="fas fa-check"></i> Mobile friendly</li>
-                        <li><i class="fas fa-check"></i> Google Webmaster</li>
-                        <li><i class="fas fa-check"></i> Google Analytics</li>
+                <div class="card glass pricing-card featured">
+                    <div class="popular-tag">Le plus populaire</div>
+                    <div class="plan-header">
+                        <h3>Standard</h3>
+                        <div class="price">2200 <span class="currency">DH</span><span class="tax">/HT</span></div>
+                        <p>Pour les PME ambitieuses</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 10 Pages</li>
+                        <li><i class="fas fa-check-circle"></i> Hébergement Offert (1 an)</li>
+                        <li><i class="fas fa-check-circle"></i> 10 Emails Pro</li>
+                        <li><i class="fas fa-check-circle"></i> SEO de base</li>
+                        <li><i class="fas fa-check-circle"></i> Google Analytics</li>
                     </ul>
-                    <button class="price-btn" onclick="openContactForm('Standard')">Contactez-nous</button>
+                    <button class="btn btn-primary full-width" onclick="openContactForm('Standard')">Choisir Standard</button>
                 </div>
 
-                <!-- Professional Plan -->
-                <div class="pricing-card">
-                    <h3>Professionnel</h3>
-                    <div class="price">4500 dh<span>/HT</span></div>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> 30 pages + page de contact</li>
-                        <li><i class="fas fa-check"></i> Hébergement et nom de domaine offert (première année)</li>
-                        <li><i class="fas fa-check"></i> 10 Adresses de messagerie</li>
-                        <li><i class="fas fa-check"></i> Mobile friendly</li>
-                        <li><i class="fas fa-check"></i> Google Webmaster</li>
-                        <li><i class="fas fa-check"></i> Google Analytics</li>
+                <div class="card glass pricing-card">
+                    <div class="plan-header">
+                        <h3>Professionnel</h3>
+                        <div class="price">4500 <span class="currency">DH</span><span class="tax">/HT</span></div>
+                        <p>Performance maximale</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 30 Pages</li>
+                        <li><i class="fas fa-check-circle"></i> Hébergement Offert (1 an)</li>
+                        <li><i class="fas fa-check-circle"></i> Emails Illimités</li>
+                        <li><i class="fas fa-check-circle"></i> SEO Avancé</li>
+                        <li><i class="fas fa-check-circle"></i> Support Prioritaire</li>
                     </ul>
-                    <button class="price-btn" onclick="openContactForm('Professionnel')">Contactez-nous</button>
+                    <button class="btn btn-outline full-width" onclick="openContactForm('Professionnel')">Choisir Pro</button>
                 </div>
-
-                <!-- Custom Plan -->
-                <div class="pricing-card">
-                    <h3>Sur Mesure</h3>
-                    <div class="price">Sur Devis</div>
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> Pages illimitées</li>
-                        <li><i class="fas fa-check"></i> Hébergement et nom de domaine offert (première année)</li>
-                        <li><i class="fas fa-check"></i> 15 Adresses de messagerie</li>
-                        <li><i class="fas fa-check"></i> Mise à jour continue</li>
-                        <li><i class="fas fa-check"></i> Référencement avancé</li>
-                        <li><i class="fas fa-check"></i> Support premium</li>
-                    </ul>
-                    <button class="price-btn" onclick="openContactForm('Sur Mesure')">Demander un Devis</button>
+            </div>
+            
+            <div class="custom-quote glass mt-5" onclick="openContactForm('Sur Mesure')">
+                <div class="quote-content">
+                    <h3>Besoin de plus ?</h3>
+                    <p>Applications web complexes, E-commerce sur mesure ou grands portails.</p>
                 </div>
+                <button class="btn btn-white">Demander un devis <i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact">
         <div class="container">
-            <h2>Nous Contacter</h2>
-            <div class="contact-content">
+            <div class="grid-2 contact-grid">
                 <div class="contact-info">
-                    <h3>Informations de Contact</h3>
-                    <p><i class="fas fa-phone"></i> <strong>Téléphone:</strong> +212 6 60 48 79 69</p>
-                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:kaelarservices@gmail.com">kaelarservices@gmail.com</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> Casablanca, Maroc</p>
+                    <h2>Discutons de votre projet</h2>
+                    <p>Nous sommes prêts à faire passer votre business au niveau supérieur.</p>
                     
-                    <h3 style="margin-top: 30px;">Suivez-nous</h3>
-                    <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+212 6 60 48 79 69</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>kaelarservices@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fas fa-map-pin"></i></div>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Casablanca, Maroc</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-row">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
 
-                <div class="contact-form">
-                    <h3>Envoyez-nous une Demande</h3>
+                <div class="card glass contact-form-wrapper">
                     <form id="contactForm" onsubmit="sendRequest(event)">
-                        <input type="text" id="name" placeholder="Votre Nom" required>
-                        <input type="email" id="email" placeholder="Votre Email" required>
-                        <input type="text" id="subject" placeholder="Sujet" required>
-                        <input type="text" id="package" placeholder="Package Intéressé" required>
-                        <textarea id="message" placeholder="Votre Message" rows="5" required></textarea>
-                        <button type="submit" class="submit-btn">Envoyer la Demande</button>
+                        <h3>Envoyez un message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Nom complet</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email professionnel</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="subject" placeholder=" " required>
+                                <label for="subject">Sujet</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="package" placeholder=" " required>
+                                <label for="package">Pack (Optionnel)</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Comment pouvons-nous aider ?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Envoyer la demande</button>
+                        <div id="formMessage" class="form-message"></div>
                     </form>
-                    <div id="formMessage" class="form-message"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Chatbot -->
-    <div id="chatbot" class="chatbot">
+    <div id="chatbot" class="chatbot glass">
         <div class="chatbot-header" onclick="toggleChatbot()">
-            <span>Assistant Kaelar</span>
+            <div class="bot-info">
+                <div class="status-dot"></div>
+                <span>Assistant Kaelar</span>
+            </div>
             <i class="fas fa-times"></i>
         </div>
         <div class="chatbot-messages" id="chatMessages"></div>
@@ -189,16 +263,16 @@
         </div>
     </div>
 
-    <!-- Chatbot Toggle Button -->
     <button class="chatbot-toggle" onclick="toggleChatbot()" id="chatbotToggle">
-        <i class="fas fa-comments"></i>
+        <i class="fas fa-comment-dots"></i>
     </button>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Kaelar Services. Tous droits réservés.</p>
-            <p>Création de sites web professionnels au Maroc</p>
+            <div class="footer-content">
+                <div class="footer-brand">Kaelar Services</div>
+                <p>&copy; 2025 Tous droits réservés. Fait avec <i class="fas fa-heart" style="color: #ec4899;"></i> à Casablanca.</p>
+            </div>
         </div>
     </footer>
 
